@@ -3,12 +3,26 @@
  */
 package shivam.learns;
 
+import shivam.learns.lambda.LearnLambda;
+import shivam.learns.lambda.PrintAnything;
+import shivam.learns.threads.LearnThread;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+
+
+        LearnLambda learnLambda = new LearnLambda();
+
+        learnLambda.print();
+
+
+
+    }
+    public static void print(PrintAnything printAnything){
+        System.out.println("Hey");
     }
 }
