@@ -1,4 +1,4 @@
-package shivam.learns.threads;
+package shivam.learns.java.threads;
 
 public class LearnThread extends Thread {
 

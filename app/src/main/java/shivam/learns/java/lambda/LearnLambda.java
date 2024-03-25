@@ -1,4 +1,4 @@
-package shivam.learns.lambda;
+package shivam.learns.java.lambda;
 
 public class LearnLambda implements PrintAnything {
 

@@ -3,9 +3,8 @@
  */
 package shivam.learns;
 
-import shivam.learns.lambda.LearnLambda;
-import shivam.learns.lambda.PrintAnything;
-import shivam.learns.threads.LearnThread;
+import shivam.learns.java.lambda.LearnLambda;
+import shivam.learns.java.lambda.PrintAnything;
 
 public class App {
     public String getGreeting() {

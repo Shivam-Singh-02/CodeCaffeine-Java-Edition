@@ -1,4 +1,4 @@
-package shivam.learns.collection;
+package shivam.learns.java.collection;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
