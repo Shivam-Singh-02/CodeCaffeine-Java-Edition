@@ -1,9 +1,13 @@
 package shivam.practice.leetcode;
 
 import java.util.AbstractMap;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Stack;
+
+/*
+This solution uses O(n) extra space in form of a Stack
+The total time complexity is O(n) as well since we traverse each element once and push each element at max once in
+the Stack.
+ */
 
 public class LargestRectangle {
 
