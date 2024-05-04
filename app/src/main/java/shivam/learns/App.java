@@ -6,17 +6,23 @@ package shivam.learns;
 import shivam.learns.java.lambda.LearnLambda;
 import shivam.learns.java.lambda.PrintAnything;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.net.URLConnection;
+import java.util.Scanner;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
 
-        LearnLambda learnLambda = new LearnLambda();
 
-        learnLambda.print();
 
 
 
@@ -24,4 +30,7 @@ public class App {
     public static void print(PrintAnything printAnything){
         System.out.println("Hey");
     }
+
+
+
 }
