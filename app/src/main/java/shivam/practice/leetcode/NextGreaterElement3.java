@@ -59,7 +59,6 @@ public class NextGreaterElement3 {
         System.out.println(ans);
     }
     public static int nextGreaterElement2(int n) {
-        // The same as : leetcode 31 Next Permutation, O(n)
         char[] number = (n + "").toCharArray();
         int i = -1;
         //1. find backwards
