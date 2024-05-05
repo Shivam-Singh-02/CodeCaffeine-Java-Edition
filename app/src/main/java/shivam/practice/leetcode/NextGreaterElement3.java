@@ -55,10 +55,6 @@ public class NextGreaterElement3 {
     public static void main(String[] args) {
         int n = 123476542;
 
-        int[] ar = {1,2,3};
-
-        Arrays.sort(ar);
-
         int ans = NextGreaterElement3.nextGreaterElement2(n);
         System.out.println(ans);
     }
