@@ -1,4 +1,4 @@
-package shivam.learns.ds;
+package shivam.learns.ds.tree;
 
 import lombok.Getter;
 import lombok.Setter;

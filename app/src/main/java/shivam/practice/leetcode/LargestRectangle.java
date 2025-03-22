@@ -13,8 +13,8 @@ public class LargestRectangle {
 
     public static void main(String[] args) {
         LargestRectangle largestRectangle = new LargestRectangle();
-        int[] ar = {2,1,5,6,2,3};
-        Integer maxArea = largestRectangle.largestRectangleArea(ar);
+        int[] ar = {1,1};
+        Integer maxArea = largestRectangle.largestRectangleArea2(ar);
         System.out.println(maxArea);
     }
 
@@ -38,6 +38,42 @@ public class LargestRectangle {
             Integer height = entry.getValue();
             maxArea = maxArea.compareTo(height * (heights.length - index)) > 0 ? maxArea : height * (heights.length - index);
         }
+        return maxArea;
+    }
+
+    public int largestRectangleArea2(int[] heights) {
+        int[] ls = new int[heights.length];
+        int[] rs = new int[heights.length];
+        int maxArea = -1;
+        Stack<Integer> stack = new Stack();
+        for(int i=0 ;i<heights.length; i++){
+            while(!stack.empty() && heights[stack.peek()] >= heights[i]){
+                stack.pop();
+            }
+            if(stack.empty())
+                ls[i] = 0;
+            else
+                ls[i] = stack.peek() + 1;
+            stack.push(i);
+        }
+
+        stack.clear();
+
+        for(int i=heights.length-1 ;i>=0; i--){
+            while(!stack.empty() && heights[stack.peek()] >= heights[i]){
+                stack.pop();
+            }
+            if(stack.empty())
+                rs[i] = heights.length-1;
+            else
+                rs[i] = stack.peek() - 1;
+            stack.push(i);
+        }
+
+        for(int i=0; i<heights.length; i++){
+            maxArea = Math.max(maxArea, ((rs[i] - ls[i] + 1) * heights[i]));
+        }
+
         return maxArea;
     }
 }

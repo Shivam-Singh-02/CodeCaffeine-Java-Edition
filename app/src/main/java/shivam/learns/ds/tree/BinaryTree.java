@@ -4,8 +4,6 @@ package shivam.learns.ds.tree;
 Binary tree is a special type of tree where each node has at most two children.
  */
 
-import shivam.learns.ds.Node;
-
 import java.util.*;
 
 class Tupple {

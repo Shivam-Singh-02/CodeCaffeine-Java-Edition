@@ -13,6 +13,6 @@
         <module name="CodeCaffeine-Java-Edition.app.main" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="15" />
+    <bytecodeTargetLevel target="24" />
   </component>
 </project>
